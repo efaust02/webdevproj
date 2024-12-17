@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Poole Joke Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #joke {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="post.html">Posts</a> | <a href="scratch.html">Gallery (scratch)</a>
+        <h1>Jordan Poole Joke Generator</h1>
+        <button onclick="generateJoke()">Get a Joke!</button>
+        <p id="joke"></p>
+    </div>
+
+    <script>
+        const jokes = [
+            "Why did Jordan Poole bring a life jacket to the game? Because he's always in the Poole!",
+            "Jordan Poole doesn’t just splash threes; he creates tidal waves.",
+            "When Jordan Poole enters the gym, even the nets get soaked.",
+            "They call it a Poole Party because everyone's invited to the highlight reel.",
+            "Why did the basketball blush? Jordan Poole made it look too good.",
+            "Jordan Poole’s range? Let’s just say he shoots from a different zip code.",
+            "Opponents call him Jordan 'Puddle' Poole—because they always end up soaked.",
+            "What’s Jordan Poole’s favorite dance? The splash dance.",
+            "Why don’t they let Jordan Poole play near the ocean? Too many splash warnings.",
+            "Jordan Poole’s shot is wetter than Seattle in December.",
+            "They say Jordan Poole doesn’t miss… because the rim is just his assistant.",
+            "Jordan Poole's dribble moves have defenders calling their chiropractors.",
+            "The only thing faster than Jordan Poole’s crossover is his scoring streak.",
+            "Jordan Poole walked into a pool party—then turned it into a slam dunk contest.",
+            "Jordan Poole doesn’t drive to the hoop; he surfs there.",
+            "Jordan Poole’s basketball IQ is so high, it graduated summa cum laude.",
+            "Why does Jordan Poole love fast breaks? Because he gets to lead the splash zone.",
+            "Jordan Poole doesn’t just hit threes; he writes poetry with them.",
+            "They don’t call it a highlight reel anymore; it’s a Poole reel.",
+            "Jordan Poole’s shot is so clean, the janitor asked for tips.",
+            "What do you get when Jordan Poole and Steph Curry play together? A tsunami warning.",
+            "Jordan Poole’s handles are so slick, the court needs hazard signs.",
+            "Why did Jordan Poole bring sunscreen to the game? For his shooting streaks in the spotlight.",
+            "Jordan Poole’s step-back threes are so smooth, they should be bottled as cologne.",
+            "Why do defenders avoid Jordan Poole? They don’t want to end up in the deep end.",
+            "Jordan Poole isn’t just a shooter; he’s a swim instructor for the net.",
+            "Jordan Poole's assists are like lifeboats—they save the game every time.",
+            "Why did the court flood? Jordan Poole brought the rain again.",
+            "Jordan Poole’s threes come with a lifeguard warning.",
+            "Opponents don’t guard Jordan Poole—they need floaties to keep up.",
+            "Why does Jordan Poole always smile? He’s making basketball a splash.",
+            "Jordan Poole’s defense is like a whirlpool; opponents get sucked in.",
+            "Jordan Poole is proof you can make waves without leaving the court.",
+            "Why did Jordan Poole wear goggles? To see all his shots better underwater.",
+            "Jordan Poole doesn’t break ankles—he drowns defenders.",
+            "Why do fans bring towels to Jordan Poole’s games? To dry off after his performances.",
+            "Jordan Poole doesn’t shoot bricks; he builds pools.",
+            "What’s Jordan Poole’s warm-up routine? Practicing cannonballs into the deep end.",
+            "Jordan Poole's nickname should be 'Poseidon'—he rules the splash zone.",
+            "Why does Jordan Poole play so well at night? Because stars shine brightest.",
+            "Jordan Poole’s crossover could part the Red Sea.",
+            "When Jordan Poole steps back, even time stops to watch.",
+            "What’s wetter than a Jordan Poole jumper? Nothing.",
+            "Jordan Poole’s highlight reel doubles as a weather report: Expect rain.",
+            "Why is Jordan Poole the best teammate? He makes everyone else look like they’re walking on water.",
+            "They should rename the 3-point line the Poole Party zone.",
+            "Jordan Poole doesn’t just make baskets; he makes tidal waves.",
+            "Why did Jordan Poole bring a surfboard to the game? To ride his own wave.",
+            "When Jordan Poole plays, every gym turns into an indoor waterpark.",
+            "Jordan Poole’s shooting stroke is the eighth wonder of the world."
+        ];
+
+        function generateJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            document.getElementById("joke").innerText = jokes[randomIndex];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Poole Fan Page</title>
+    <link rel="stylesheet" href="customstyles.css">
+</head>
+<body>
+
+    <div class="custom">
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="post.html">Posts</a> | 
+        <a href="webapp.html">Have some fun! (webapp)</a>
+    </div>
+
+    <a href="#video">Jump to Video</a> | <a href="#tableau">Jump to Tableau Viz</a>
+
+    <h1>Jordan Poole Fan Page</h1>
+    <h5>A tribute to our king Jordan Poole</h5>
+
+    <div class="content-block">
+        <img class="img" src="assets/img/jp1.jpg" alt="Our king Jordan">
+        <img class="img" src="assets/img/jp2.jpg" alt="Our king Jordan">
+        <img class="img" src="assets/img/jp3.jpg" alt="Our king Jordan">
+        <img class="img" src="assets/img/jp4.jpg" alt="Our king Jordan">
+    </div>
+
+    <div class="content-block">
+        <h3>Favorite Basketball Players</h3>
+        <ol>
+            <li>Jordan Poole
+                <ul>
+                    <li>Best Shooter</li>
+                    <li>Clutch Performer</li>
+                </ul>
+            </li>
+            <li>Cristiano Felicio</li>
+            <li>Bilal Coulibaly</li>
+        </ol>
+    </div>
+
+    <div id="video" class="content-block">
+        <h3>Jordan Poole's Best Highlights</h3>
+        <iframe 
+            src="https://www.youtube.com/embed/gRaWJfgsG7I" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div id="tableau" class="content-block">
+        <h3>NBA Team Salaries Against the Cap</h3>
+        <div class='tableauPlaceholder' id='viz1734212147142'>
+            <noscript>
+                <a href='#'>
+                    <img alt='NBA Team Salaries Against the Cap' src='https://public.tableau.com/static/images/NB/NBATeamSalariesAgainsttheCap/Scorecard/1_rss.png' />
+                </a>
+            </noscript>
+            <object class='tableauViz'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='NBATeamSalariesAgainsttheCap&#47;Scorecard' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/NB/NBATeamSalariesAgainsttheCap/Scorecard/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1734212147142');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width='100%'; 
+            vizElement.style.height='800px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+</body>
+</html>
